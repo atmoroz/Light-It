@@ -1,0 +1,91 @@
+.product {
+    display: flex;
+    justify-content: space-around;
+}
+.productDescription {
+    width: 50%;
+}
+.productDescription > img {
+    max-width: 500px;
+    height: auto;
+}
+.description {
+    margin-bottom: 0;
+    border-bottom: 1px solid #eb5858;
+}
+.productReviews {
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+.reviewList {
+    list-style: none;
+    padding: 0;
+}
+.reviewItem {
+    min-width: 250px;
+    border: 1px solid rgba(235, 88, 88, 0.3);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #d5c9c9;
+    box-shadow: inset 1px 2px 12px 0px rgba(157, 154, 154, 0.75);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.reviewComments {
+    display: block;
+    max-width: 100%;
+    min-width: 250px;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    text-indent: 15px;
+    margin: 15px 0;
+    padding: 10px 0;
+    color: #696969;
+    border-radius: 4px;
+}
+.reviewRate {
+    display: flex;
+    justify-content: space-between;
+}
+.reviewButton {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    width: 150px;
+    height: 50px;
+    background: #eb5858;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+}
+.reviewButton:hover {
+    background: #b63e3e;
+}
+.reviewComment {
+    margin: 0;
+}
+@media (max-width: 1140px) {
+    .product {
+        display: block;
+    }
+    .productReviews {
+        margin-left: 0;
+        margin-top: 40px;
+        width: 100%;
+    }
+    .productDescription {
+        width: 100%;
+    }
+    .productDescription > img {
+        display: block;
+        max-width: 700px;
+        width: 100%;
+        height: auto;
+    }
+    .description {
+        max-width: 700px;
+    }
+}

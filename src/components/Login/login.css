@@ -1,0 +1,51 @@
+.login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #eb5858;
+    border-top: 1px solid #eb5858;
+    border-bottom: 1px solid #eb5858;
+    background-color: #d5c9c9;
+    padding: 20px;
+}
+.greetingUser {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.loginList {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+.loginListItem {
+    margin: 0 20px;
+}
+.loginLink {
+    font-size: 16px;
+    color: #113144;
+    border: 2px solid #717281;
+    border-radius: 4px;
+    padding: 10px;
+}
+.loginLink:hover {
+    box-shadow: inset 0px 0px 5px 0px rgba(113, 114, 129, 0.75);
+}
+.buttonHide {
+    display: none;
+}
+@media (max-width: 540px) {
+    .loginList {
+        display: block;
+    }
+    .loginLink {
+        display: block;
+        max-width: 250px;
+        min-width: 110px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .loginListItem {
+        margin: 10px 0;
+    }
+}
