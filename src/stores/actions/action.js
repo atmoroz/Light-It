@@ -55,7 +55,6 @@ export const authorizationUser = ({ username, password }) => async dispatch => {
                     userName: username
                 }
             });
-            alert(`Hello ${username}, you are success authorization`);
             localStorage.setItem("token", data.token);
             localStorage.setItem("userName", username);
             return;
@@ -92,7 +91,6 @@ export const registrUser = ({ username, password }) => async dispatch => {
                     userName: username
                 }
             });
-            alert(`Hello ${username}, you are success registration.`);
             localStorage.setItem("token", data.token);
             localStorage.setItem("userName", username);
             return;
